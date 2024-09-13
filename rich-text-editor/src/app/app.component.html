@@ -1,0 +1,11 @@
+<p>App works</p>
+<!-- <quill-editor [(ngModel)]="editorContent"></quill-editor><br>
+<button (click)="handleSubmit()">submit</button> -->
+
+<form>
+  <div class="NgxEditor__Wrapper">
+    <ngx-editor-menu [editor]="editor" [toolbar]="toolbar"> </ngx-editor-menu>
+    <ngx-editor [editor]="editor" formControlName="editorContent" [ngModel]="html"> </ngx-editor>
+  </div>
+</form>
+<button (click)="handleSubmit()">submit</button>
